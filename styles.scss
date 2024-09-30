@@ -173,7 +173,7 @@ body {
     }
 
     .carousel-slide {
-        width: 100%; // Garante que o slide ocupe 100% da largura do contêiner
+        width: 100%; 
         min-width: 100%;
         box-sizing: border-box;
         padding: 20px;
@@ -187,11 +187,11 @@ body {
 
     .carousel-buttons {
         position: absolute;
-        top: 70%; // Centralizar verticalmente
-        left: 50%; // Centralizar horizontalmente
-        transform: translate(-50%, -50%); // Ajusta a posição para o centro
-        display: flex; // Alinhar os botões em linha
-        justify-content: space-between; // Espaço entre os botões
+        top: 70%;
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        display: flex; 
+        justify-content: space-between; 
         width: 80%;
 
         .prev,
@@ -214,26 +214,26 @@ body {
     .quiz {
     align-items: center;
     position: relative;
-    max-width: 800px; // Ajuste conforme necessário
-    margin: auto; // Centraliza a seção
+    max-width: 800px; 
+    margin: auto; 
     margin-top: 32px;
-    padding: 20px; // Espaçamento interno
-    background: rgba(0, 0, 0, 0.8); // Fundo semi-transparente
-    border-radius: 8px; // Bordas arredondadas
-    text-align: center; // Centraliza o texto
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); // Sombra para dar profundidade
+    padding: 20px; 
+    background: rgba(0, 0, 0, 0.8); 
+    border-radius: 8px; 
+    text-align: center; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
 
     h3 {
         display: block;
         margin: 0 auto 20px;
-        margin-bottom: 20px; // Espaçamento abaixo do título
-        color: #fff; // Cor do texto do título
+        margin-bottom: 20px; 
+        color: #fff; 
     }
 
     button {
         display: block;
-        width: fit-content; // Ajusta a largura para o conteúdo
-        margin: 0 auto; // Centraliza o botão
+        width: fit-content; 
+        margin: 0 auto;
         padding: 16px;
         border-radius: 24px;
         color: #fff;
@@ -255,68 +255,68 @@ body {
     #result-container {
         margin-top: 20px;
         font-size: 24px;
-        color: #fff; // Cor do texto do resultado
-        display: none; // Inicialmente escondido
-        align-items: center; // Alinha verticalmente
-        justify-content: center; // Alinha horizontalmente
+        color: #fff; 
+        display: none; 
+        align-items: center; 
+        justify-content: center;
 
         #house-result {
-        margin-right: 20px; // Espaço entre o texto e a imagem
+        margin-right: 20px; 
         }
 
         #sorting-hat {
         max-width: 150px;
-        display: none; // Inicialmente escondido
-        margin-top: 20px; // Espaçamento acima da imagem
+        display: none; 
+        margin-top: 20px; 
         }
     }
     }
 
     section {
     display: flex;
-    flex-wrap: wrap; // Permite que os itens se movam para a próxima linha
-    justify-content: space-between; // Espaça os elementos horizontalmente
-    padding: 20px; // Espaçamento interno da seção
-    background-color: #f8f8f805; // Cor de fundo da seção
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    padding: 20px; 
+    background-color: #f8f8f805; 
     }
 
     #livros {
     display: flex;
-    flex-wrap: wrap; // Permite que os cards se movam para a próxima linha
-    justify-content: space-between; // Espaça os cards horizontalmente
-    width: 100%; // Largura total
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    width: 100%; 
     }
 
     .livro {
     display: flex;
     align-items: center;
-    flex-direction: column; // Coloca o título em cima
-    width: calc(50% - 16px); // Largura de 50% menos margem
-    margin: 8px; // Espaço ao redor de cada card
-    border: 1px solid #2e2e2e; // Borda do card
-    border-radius: 8px; // Bordas arredondadas
-    overflow: hidden; // Esconde qualquer conteúdo que transborde
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.661); // Sombra do card
-    background-color: rgba(0, 0, 0, 0.547); // Cor de fundo do card
+    flex-direction: column; 
+    width: calc(50% - 16px); 
+    margin: 8px; 
+    border: 1px solid #2e2e2e; 
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.661); 
+    background-color: rgba(0, 0, 0, 0.547); 
 
     img {
-        width: 100%; // Largura total da imagem do card
-        height: 240px; // Altura automática para manter a proporção
-        object-fit: cover; // Cobre o espaço mantendo a proporção
-        border-radius: 4px; // Bordas arredondadas na imagem
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.856); // Sombra da imagem
+        width: 100%; 
+        height: 240px; 
+        object-fit: cover; 
+        border-radius: 4px; 
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.856); 
 
         h3 {
-        margin: 16px 16px; // Margem ao redor do título
-        font-size: 18px; // Tamanho da fonte do título
-        text-align: center; // Centraliza o título
+        margin: 16px 16px; 
+        font-size: 18px; 
+        text-align: center; 
         }
 
         p {
-        padding: 16px; // Espaçamento interno das descrições
+        padding: 16px; 
         margin-right: 24px;
-        font-size: 14px; // Tamanho da fonte das descrições
-        color: #555; // Cor do texto
+        font-size: 14px; 
+        color: #555; 
         }
     }
     }
@@ -329,9 +329,7 @@ body {
     background-color: #00000075; 
     color: #ffffffbc; 
     margin-bottom: -16px; 
-    margin: 20px -20px -20px ; /* Ajuste a margem conforme necessário */
-
-    
+    margin: 20px -20px -20px ; 
 
         a {
             display: inline-block; /* para que o margin-top funcione*/
@@ -440,41 +438,41 @@ body {
         }
     
         h1 {
-            font-size: 36px; // Tamanho do título reduzido
+            font-size: 36px; 
         }
     
         h2 {
-            font-size: 28px; // Tamanho do título reduzido
+            font-size: 28px; 
         }
     
         h3 {
-            font-size: 20px; // Tamanho do subtítulo reduzido
+            font-size: 20px; 
         }
     
         .books {
-            max-width: 100%; // Ajuste para garantir que o conteúdo das livros se encaixe
+            max-width: 100%; 
         }
     
         #character {
-            display: flex; // Certifique-se de que #character seja um contêiner flex
-            flex-direction: column; // Mantenha a direção da coluna
-            max-width: 100%; // Permita que ocupe toda a largura
-            overflow-wrap: break-word; // Quebra de palavras longas se necessário
+            display: flex; 
+            flex-direction: column; 
+            max-width: 100%; 
+            overflow-wrap: break-word; 
     
             .content {
-                text-align: left; // Alinha o conteúdo à esquerda
-                flex-wrap: wrap; // Permite que os itens quebrem para a próxima linha, se necessário
-                width: 100%; // Garante que o conteúdo ocupe toda a largura
+                text-align: left; 
+                flex-wrap: wrap; 
+                width: 100%; 
                 display: flex;
                 flex-direction: column;
             }
     
             .character {
-                margin-bottom: 20px; // Espaçamento entre os personagens
+                margin-bottom: 20px; 
     
                 p {
-                    max-width: 100%; // Permite que o texto ocupe toda a largura
-                    text-align: left; // Alinha o texto à esquerda
+                    max-width: 100%; 
+                    text-align: left; 
                     overflow-wrap: break-word; 
                 }
             }
