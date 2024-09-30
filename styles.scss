@@ -1,0 +1,483 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Inclui padding e borda na largura e altura */
+    font-family: "Cinzel", serif;
+    text-decoration: none;
+}
+
+body {
+    background: linear-gradient(
+        to right,
+        #1a1a1a,
+        #2e2e2e,
+        #4a1b1b,
+        #5e4e00,
+        #000000
+    );
+}
+    p, h3 {
+        color: #fff;
+        
+    }
+
+    .header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    }
+
+    .text-container {
+    flex: 1;
+    padding: 60px;
+    }
+
+    img {
+    flex: 1;
+    max-width: 50%;
+    height: auto; /* Mantém a proporção da imagem */
+    box-shadow: 4px 4px 16px rgba(216, 216, 216, 0.8);
+    margin: 24px 24px;
+    border-radius: 8px;
+    }
+
+    h1 {
+    margin-bottom: 36px;
+    font-weight: bold;
+    font-size: 60px;
+    color: #ffffffeb;
+    text-shadow: 4px 4px 16px rgba(216, 216, 216, 0.8);
+    }
+
+    @keyframes blink {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    }
+
+    h3 {
+    font-size: 32px;
+    animation: blink 6s infinite;
+    margin-top: 16px;
+    }
+
+    h2 {
+    color: #ffffffcb;
+    text-shadow: 4px 4px 16px rgba(216, 216, 216, 0.8);
+    font-size: 48px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    font-size: 56px;
+    margin-bottom: 16px;
+    }
+
+    .links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+    }
+
+    .sobre {
+    text-align: center;
+
+        p {
+            max-width: 80%;
+            margin: 0 auto; /* Centraliza o parágrafo dentro do contêiner */
+            text-shadow: 4px 4px 16px rgba(216, 216, 216, 0.8);
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+        }
+
+    .button {
+        display: inline-block; /* Necessário para aplicar padding e dimensões ao link */
+        margin: 0 24px; 
+        margin-bottom: 32px;
+        padding: 16px;
+        border-radius: 24px;
+        color: #fff;
+        background-color: #1a1a1a;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        font-weight: bold;
+        transition: background-color 0.4s ease, box-shadow 0.6s ease;
+        
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.697);
+            box-shadow: 4px 4px 16px rgba(216, 216, 216, 0.8);
+            font-weight: lighter;
+            font-weight: 0.5s ease; /* Transição suave */
+        }
+        }
+        
+
+    section {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se não houver espaço */
+    justify-content: space-around;
+    }
+
+    #books {
+    text-align: center;
+    flex-direction: column; /*Para que o título fique acima */
+    }
+
+    .character {
+    display: flex;
+    align-items: center;
+    flex-direction: column; /*Para que o título fique acima */
+    width: 600px;
+    margin: 16px; /* Espaço ao redor de cada card */
+    border: 1px solid #2e2e2e;
+    border-radius: 8px;
+    overflow: hidden; /* Esconde qualquer conteúdo que transborde */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.661);
+
+    img {
+        width: 600px;
+        height: 300px;
+        object-fit: cover; /* Cobre o espaço mantendo a proporção */
+        margin-right: 16px;
+        border-radius: 4px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.856);
+    }
+    }
+
+    .content {
+    display: flex;
+    align-items: center; /* Alinha a imagem e o texto ao topo */
+    padding: 16px;
+    font-size: 16px;
+    text-shadow: 4px 4px 16px rgba(216, 216, 216, 0.8);
+    }
+
+    .carousel {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    .carousel-container {
+        display: flex;
+        width: 100%;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-slide {
+        width: 100%; // Garante que o slide ocupe 100% da largura do contêiner
+        min-width: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.8);
+        text-align: center;
+
+        h3 {
+        margin: 0 0 10px;
+        }
+    }
+
+    .carousel-buttons {
+        position: absolute;
+        top: 70%; // Centralizar verticalmente
+        left: 50%; // Centralizar horizontalmente
+        transform: translate(-50%, -50%); // Ajusta a posição para o centro
+        display: flex; // Alinhar os botões em linha
+        justify-content: space-between; // Espaço entre os botões
+        width: 80%;
+
+        .prev,
+        .next {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: rgb(109, 107, 107);
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 50%;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.324);
+            color: #000000;
+        }
+        }
+    }
+    }
+
+    .quiz {
+    align-items: center;
+    position: relative;
+    max-width: 800px; // Ajuste conforme necessário
+    margin: auto; // Centraliza a seção
+    margin-top: 32px;
+    padding: 20px; // Espaçamento interno
+    background: rgba(0, 0, 0, 0.8); // Fundo semi-transparente
+    border-radius: 8px; // Bordas arredondadas
+    text-align: center; // Centraliza o texto
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); // Sombra para dar profundidade
+
+    h3 {
+        display: block;
+        margin: 0 auto 20px;
+        margin-bottom: 20px; // Espaçamento abaixo do título
+        color: #fff; // Cor do texto do título
+    }
+
+    button {
+        display: block;
+        width: fit-content; // Ajusta a largura para o conteúdo
+        margin: 0 auto; // Centraliza o botão
+        padding: 16px;
+        border-radius: 24px;
+        color: #fff;
+        background-color: #1a1a1a;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        font-weight: bold;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease,
+        font-weight 0.5s ease; /* Transição suave */
+
+        &:hover {
+        background-color: rgba(0, 0, 0, 0.697);
+        box-shadow: 4px 4px 16px rgba(216, 216, 216, 0.8);
+        font-weight: lighter;
+        }
+    }
+
+    #result-container {
+        margin-top: 20px;
+        font-size: 24px;
+        color: #fff; // Cor do texto do resultado
+        display: none; // Inicialmente escondido
+        align-items: center; // Alinha verticalmente
+        justify-content: center; // Alinha horizontalmente
+
+        #house-result {
+        margin-right: 20px; // Espaço entre o texto e a imagem
+        }
+
+        #sorting-hat {
+        max-width: 150px;
+        display: none; // Inicialmente escondido
+        margin-top: 20px; // Espaçamento acima da imagem
+        }
+    }
+    }
+
+    section {
+    display: flex;
+    flex-wrap: wrap; // Permite que os itens se movam para a próxima linha
+    justify-content: space-between; // Espaça os elementos horizontalmente
+    padding: 20px; // Espaçamento interno da seção
+    background-color: #f8f8f805; // Cor de fundo da seção
+    }
+
+    #livros {
+    display: flex;
+    flex-wrap: wrap; // Permite que os cards se movam para a próxima linha
+    justify-content: space-between; // Espaça os cards horizontalmente
+    width: 100%; // Largura total
+    }
+
+    .livro {
+    display: flex;
+    align-items: center;
+    flex-direction: column; // Coloca o título em cima
+    width: calc(50% - 16px); // Largura de 50% menos margem
+    margin: 8px; // Espaço ao redor de cada card
+    border: 1px solid #2e2e2e; // Borda do card
+    border-radius: 8px; // Bordas arredondadas
+    overflow: hidden; // Esconde qualquer conteúdo que transborde
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.661); // Sombra do card
+    background-color: rgba(0, 0, 0, 0.547); // Cor de fundo do card
+
+    img {
+        width: 100%; // Largura total da imagem do card
+        height: 240px; // Altura automática para manter a proporção
+        object-fit: cover; // Cobre o espaço mantendo a proporção
+        border-radius: 4px; // Bordas arredondadas na imagem
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.856); // Sombra da imagem
+
+        h3 {
+        margin: 16px 16px; // Margem ao redor do título
+        font-size: 18px; // Tamanho da fonte do título
+        text-align: center; // Centraliza o título
+        }
+
+        p {
+        padding: 16px; // Espaçamento interno das descrições
+        margin-right: 24px;
+        font-size: 14px; // Tamanho da fonte das descrições
+        color: #555; // Cor do texto
+        }
+    }
+    }
+
+    footer {
+    width: 100%; 
+    padding: 12px;
+    font-size: 12px;
+    text-align: center;
+    background-color: #00000075; 
+    color: #ffffffbc; 
+    margin-bottom: -16px; 
+    margin: 20px -20px -20px ; /* Ajuste a margem conforme necessário */
+
+    
+
+        a {
+            display: inline-block; /* para que o margin-top funcione*/
+            margin-top: 6px; 
+            padding: 8px;
+            color: #fff;
+            text-decoration: none;
+            text-shadow: 2px 2px 4px rgba(4, 3, 3, 0.724); 
+            font-weight: bold;
+            
+            
+            &:hover {
+                transition: color 0.6s ease, text-shadow 0.5s ease; 
+                color: black;
+                font-weight: bold;
+                text-shadow: 4px 4px 8px rgb(255, 255, 255); 
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .header {
+            display: flex; /* Coloca os elementos em coluna */
+            flex-direction: column;
+            padding: 24px;
+            align-items: center; /* Centraliza os itens na coluna */
+        }
+
+        .sobre {
+            p {
+                font-size: medium;
+            }
+        }
+
+        .links {
+            flex-wrap: wrap;
+            width: 50%;
+            margin:  0 auto;
+            justify-content: center; /* Centraliza os itens horizontalmente */
+            align-items: center; /* Centraliza os itens verticalmente */
+        }
+        
+        
+        img {
+            max-width: 50%; /* Imagem ocupa 100% da largura */
+            margin: 16px 0;
+        }
+        
+    
+        h1 {
+            font-size: 48px; /* Tamanho do título reduzido */
+        }
+    
+        h2 {
+            font-size: 36px; /* Tamanho do título reduzido */
+        }
+    
+        h3 {
+            font-size: 24px; /* Tamanho do subtítulo reduzido */
+        }
+
+        p {
+            font-size: 16px;
+        }
+    
+        .livro {
+            width: calc(100% - 16px); /* Cada card ocupa 100% da largura */
+            margin: 8px 0; /* Espaço reduzido */
+        }
+
+        #character {
+            display: block;
+            flex-wrap: wrap;
+            height: auto;
+            justify-content: space-around;
+
+            img {
+                width: 50%;
+                flex-direction: column;
+            }
+
+            p{
+                max-width: 50%;
+                margin: 0 auto;
+            }
+        }
+    
+        .button {
+            padding: 12px;
+            font-size: 14px; /* Tamanho do botão reduzido */
+        }
+
+        footer {
+            p {
+                flex-direction: column;
+                font-size: small;
+            }
+        }
+    }
+    
+    @media (max-width: 480px) {
+        body {
+            display: block;
+            width: 100%;
+            background-position: 100%;
+        }
+    
+        h1 {
+            font-size: 36px; // Tamanho do título reduzido
+        }
+    
+        h2 {
+            font-size: 28px; // Tamanho do título reduzido
+        }
+    
+        h3 {
+            font-size: 20px; // Tamanho do subtítulo reduzido
+        }
+    
+        .books {
+            max-width: 100%; // Ajuste para garantir que o conteúdo das livros se encaixe
+        }
+    
+        #character {
+            display: flex; // Certifique-se de que #character seja um contêiner flex
+            flex-direction: column; // Mantenha a direção da coluna
+            max-width: 100%; // Permita que ocupe toda a largura
+            overflow-wrap: break-word; // Quebra de palavras longas se necessário
+    
+            .content {
+                text-align: left; // Alinha o conteúdo à esquerda
+                flex-wrap: wrap; // Permite que os itens quebrem para a próxima linha, se necessário
+                width: 100%; // Garante que o conteúdo ocupe toda a largura
+                display: flex;
+                flex-direction: column;
+            }
+    
+            .character {
+                margin-bottom: 20px; // Espaçamento entre os personagens
+    
+                p {
+                    max-width: 100%; // Permite que o texto ocupe toda a largura
+                    text-align: left; // Alinha o texto à esquerda
+                    overflow-wrap: break-word; 
+                }
+            }
+        }
+    }
+    
