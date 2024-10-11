@@ -291,6 +291,7 @@ section {
   margin-right: 24px;
   font-size: 14px;
   color: #555;
+  color: #c0bfcd;
 }
 
 footer {
@@ -301,7 +302,7 @@ footer {
   background-color: rgba(0, 0, 0, 0.4588235294);
   color: rgba(255, 255, 255, 0.737254902);
   margin-bottom: -16px;
-  margin: 20px -20px -20px;
+  margin: 0 auto;
 }
 footer a {
   display: inline-block; /* para que o margin-top funcione*/
