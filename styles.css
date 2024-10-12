@@ -302,6 +302,7 @@ footer {
   color: rgba(255, 255, 255, 0.737254902);
   margin-bottom: -16px;
   margin: 0 auto;
+  margin-top: 24px;
 }
 footer a {
   display: inline-block; /* para que o margin-top funcione*/
