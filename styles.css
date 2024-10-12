@@ -327,6 +327,10 @@ footer a:hover {
     padding: 24px;
     align-items: center; /* Centraliza os itens na coluna */
   }
+  .header img {
+    width: 100%;
+    height: auto;
+  }
   .sobre p {
     font-size: small;
   }
