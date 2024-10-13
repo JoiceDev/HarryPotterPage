@@ -460,11 +460,11 @@ footer a:hover {
     margin-top: 8px;
   }
   .header img {
-    max-width: 100%;
+    max-width: 80%;
     margin: 0 auto;
   }
   .sobre p {
-    font-size: small;
+    font-size: medium;
     margin: 0 auto;
     margin-top: -20px;
   }
@@ -476,10 +476,14 @@ footer a:hover {
   .links a {
     width: 100%;
     padding: 12px;
-    font-size: small;
+    font-size: medium;
     justify-content: space-around;
-    margin: 8px 4px;
-    margin-right: 6px;
+    margin: 16px 24px;
+  }
+  #books {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
   }
   #books h2 {
     font-size: medium;
@@ -487,49 +491,51 @@ footer a:hover {
   #books h3 {
     font-size: medium;
   }
+  #books img {
+    margin: 0 auto;
+    max-width: 30%;
+    margin-top: 16px;
+  }
   #books p {
+    padding: 8px;
     font-size: small;
   }
-  #character {
-    align-items: center;
-  }
-  #character h2 {
-    font-size: medium;
-  }
-  img {
-    max-width: 50%;
-    margin: 16px 0;
-  }
-  h3 {
-    font-size: medium;
-  }
   .livro {
-    width: calc(100% - 16px);
+    width: calc(50% - 16px);
     margin: 8px 0;
   }
   #character {
+    align-items: center;
     display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    padding: 0;
+    flex-wrap: wrap;
+    flex-direction: row;
     margin: 0;
-    text-align: center;
+  }
+  #character .character {
+    justify-content: space-between;
+    margin-bottom: 32px;
+    max-width: 50%;
+    padding: 16px;
+    flex: 1 1 50%;
+  }
+  #character h2 {
+    font-size: large;
+    margin-top: -8px;
   }
   #character h3 {
-    font-size: 12px;
+    font-size: medium;
   }
-  .content {
-    display: block;
-    box-sizing: border-box;
+  #character img {
+    max-width: 60%;
+    height: 180px;
+    margin: 16px 0;
   }
-  .content img {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    box-sizing: border-box;
-  }
-  .content p {
+  #character p {
     font-size: small;
+  }
+  #character .content {
+    display: block;
+    padding: 16px;
   }
   .button {
     padding: 12px;
@@ -538,9 +544,11 @@ footer a:hover {
   .carousel-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
     justify-content: space-between;
+  }
+  .carousel-slide {
+    margin-bottom: 16px;
+    max-width: 50%;
   }
   .carousel-slide h3 {
     font-size: 18px;
@@ -549,8 +557,7 @@ footer a:hover {
     font-size: small;
   }
   .carousel-slide img {
-    width: 100%;
-    margin-bottom: 0;
+    margin-bottom: 16px;
   }
   .carousel-buttons button {
     display: none;
@@ -560,28 +567,30 @@ footer a:hover {
     padding: 10px;
     max-width: 100%;
     margin-bottom: 16px;
+    margin-top: -16px;
   }
   .quiz h3 {
-    font-size: 16px;
+    font-size: 24px;
   }
   .quiz #discover-button {
     padding: 8px 16px;
-    font-size: 12px;
+    font-size: 16px;
+    margin-bottom: 16px;
   }
   .quiz #result-container #house-result {
-    font-size: 14px;
+    font-size: medium;
   }
   .quiz #result-container #sorting-hat {
     max-width: 80px;
   }
   footer {
     padding: 8px;
-    margin: 0;
+    margin: 0 auto;
     text-align: center;
   }
   footer p {
-    margin: 5px 0;
-    font-size: smaller;
+    margin: 8px 0;
+    font-size: small;
   }
 }
 
